@@ -19,7 +19,7 @@ export default function Home() {
     <header className="flex flex-row  w-[100%] justify-center   absolute">
       <div className="flex  justify-start  items-center ml-[2%] gap-10 w-screen">
         <div className=" cursor-pointer rounded-full   text-[#a7a8aa] p-6 hover:underline">
-          <Link href="/aboutus">Menu </Link></div> 
+          <Link href="/">Menu </Link></div> 
         <div className=" cursor-pointer rounded-full   text-[#a7a8aa] p-6 hover:underline">
           <Link href="/aboutus">Vulpine</Link></div> 
         <div className=" cursor-pointer rounded-full   text-[#a7a8aa] p-6 hover:underline">
