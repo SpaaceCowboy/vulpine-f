@@ -29,7 +29,7 @@ function page() {
     <div className='
     md:w-[100%] lg:w-[90%] md:h-[60vh] lg:h-[80vh] bg-slate-50/10 z-10 relative  flex self-center
     text-center  items-center flex-col justify-evenly rounded-md text-black '>
-      <Image alt='about-bg' fill="true" className='rounded-lg opacity-50' src="/about-bg.jpg"></Image>
+      <Image alt='about-bg' fill="true" className='rounded-lg opacity-50 ' src="/about-bg.jpg "></Image>
      <div className=' flex flex-col justify-evenly h-[50%] z-10 '> 
       <p className='lg:text-xl tracking-widest'>Welcome to Vulpine</p>
       <h1 className='text-5xl lg:text-7xl tracking-widest'>
@@ -53,26 +53,36 @@ function page() {
     </div>
     <div className='flex flex-row md:w-[100vh] lg:w-[90%] h-[40vh] lg:h-[60vh] gap-2 self-center justify-between
        mt-5 rounded-md'>
-      <div className=' relative w-[33%] '>
-          <Image alt='Lp' fill="true" src="/negroni.jpg" className='rounded-md'>
+      <div className='  relative w-[15%] h-[50%]  mt-[20%] lg:mt-[16%]'>
+          <Image alt='Rp' fill="true" src="/negronism.png" className='rounded-md' >
 
           </Image>
       </div>
-      <div className='flex flex-col w-[32%] rounded-md justify-evenly text-center bg-[#29343D]'>
+      <div className='  relative w-[15%] h-[50%] '>
+      <Image alt='RP2' fill={true} src="/soroshsm.png" className='rounded-md'>
+
+        </Image>
+      </div>
+      <div className='flex flex-col w-[32%] rounded-md justify-evenly text-center items-center bg-[#29343D] '>
           <h1 className='lg:text-6xl text-4xl font-normal '>
             TRADITIONAL & MODERN
           </h1>
           <p className='text-1xl lg:text-2xl font-light px-2 lg:px-4'>
               this is just a test to see if you read more to get to know our team using the section made by me in this website
           </p>
-          <button className='border rounded-md border-black'>
+          <button className='border rounded-md w-[50%] py-2   border-black'>
               ReadMore
           </button>
       </div>
-      <div className='relative w-[33%]'>
-          <Image alt='Rp' fill="true" src="/signature.jpg" className='rounded-md' >
+      <div className='  relative w-[15%] h-[50%] justify-start'>
+          <Image alt='Rp' fill="true" src="/signaturesm.png" className='rounded-md' >
 
           </Image>
+      </div>
+      <div className='  relative w-[15%] h-[50%] mt-[20%] lg:mt-[16%]'>
+      <Image alt='RP2' fill={true} src="/green-negronism.jpg" className='rounded-md'>
+
+        </Image>
       </div>
     </div>
     <div className='flex flex-row w-[100%] h-[90vh] bg-[#29343D] mt-60'>
