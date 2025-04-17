@@ -68,7 +68,7 @@ export default function Home() {
          
     </main>
     <footer className=" absolute bottom-2 w-[100%] flex">
-      <div className=" w-[80%] justify-end mb-4 ml-[3%]">
+      <div className=" w-[80%] mb-4 ml-[3%]">
        <div className="flex flex-wrap gap-2 w-[100%] justify-start">
        <IconContext.Provider value={{ color: "#a7a8aa", className: "global-class-name", size:"2em" }}>
         <Link href="https://www.instagram.com/vulpine_drinks/">

@@ -1,21 +1,28 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { PiInstagramLogoThin } from "react-icons/pi"
+import { IconContext } from "react-icons";
+import { PiYoutubeLogoThin } from "react-icons/pi";
+import { GiFox } from "react-icons/gi";
+
+
 function page() {
   return (
     <>
   <section className=' w-screen h-[100%] absolute bg-[#0E1c1c]'>
     <header className="flex flex-row  w-[100%] justify-center  absolute">
       <div className="flex  justify-start  items-center ml-[2%] gap-10 w-screen">
-        <div className=" cursor-pointer rounded-full   text-[#a7a8aa] p-6 hover:underline">
+        <div className=" cursor-pointer rounded-full hover:text-[#B68B4B]  text-[#a7a8aa] pl-14 hover:underline">
           <Link href="/">Menu </Link></div> 
-        <div className=" cursor-pointer rounded-full   text-[#a7a8aa] p-6 hover:underline">
+        <div className=" cursor-pointer rounded-full hover:text-[#B68B4B]  text-[#a7a8aa] p-6 hover:underline">
           <Link href="/aboutus">Vulpine</Link></div> 
-        <div className=" cursor-pointer rounded-full   text-[#a7a8aa] p-6 hover:underline">
+        <div className=" cursor-pointer rounded-full hover:text-[#B68B4B]  text-[#a7a8aa] p-6 hover:underline">
           <Link href="/aboutus">Moments</Link></div> 
-        <div className=" cursor-pointer rounded-full   text-[#a7a8aa] p-6 hover:underline">
+        <div className=" cursor-pointer rounded-full hover:text-[#B68B4B]  text-[#a7a8aa] p-6 hover:underline">
           <Link href="/aboutus">Contact</Link></div> 
-        <div className=" cursor-pointer rounded-full   text-[#a7a8aa] p-6 hover:underline">
+        <div className=" cursor-pointer rounded-full hover:text-[#B68B4B]  text-[#a7a8aa] p-6 hover:underline">
           <Link href="/aboutus">Reservation</Link></div>   
        </div>
       <div className="relative">
@@ -25,11 +32,11 @@ function page() {
     </div>
     </header>   
   </section>
-  <section className='top-28 flex flex-col w-[100%] relative bg-[#0E1c1c]'>
+  <section className='top-28 flex flex-col w-[100%] relative bg-[#0E1c1c] text-[#B68B4B]'>
     <div className='
     md:w-[100%] lg:w-[90%] md:h-[60vh] lg:h-[80vh] bg-slate-50/10 z-10 relative  flex self-center
-    text-center  items-center flex-col justify-evenly rounded-md text-black '>
-      <Image alt='about-bg' fill="true" className='rounded-lg opacity-50 ' src="/about-bg.jpg "></Image>
+    text-center  items-center flex-col justify-evenly rounded-md  '>
+      <Image alt='about-bg' fill="true" className='rounded-lg opacity-30 ' src="/about-bg.jpg "></Image>
      <div className=' flex flex-col justify-evenly h-[50%] z-10 '> 
       <p className='lg:text-xl tracking-widest'>Welcome to Vulpine</p>
       <h1 className='text-5xl lg:text-7xl tracking-widest'>
@@ -67,7 +74,7 @@ function page() {
           <h1 className='lg:text-6xl text-4xl font-normal '>
             TRADITIONAL & MODERN
           </h1>
-          <p className='text-1xl lg:text-2xl font-light px-2 lg:px-4'>
+          <p className='text-1xl lg:text-2xl font-light px-2 lg:px-10 '>
               this is just a test to see if you read more to get to know our team using the section made by me in this website
           </p>
           <button className='border rounded-md w-[50%] py-2   border-black'>
@@ -85,9 +92,39 @@ function page() {
         </Image>
       </div>
     </div>
-    <div className='flex flex-row w-[100%] h-[90vh] bg-[#29343D] mt-60'>
+    <div className=' w-[100%] h-[70vh] lg:h-[80vh] bg-[#29343D] mt-40'>
+      <div className='flex flex-row w-[100%] h-[55vh] lg:h-[65vh]  mt-[15vh]'>
+        <div className='flex flex-col w-[50%]'>
 
+        </div>
+        <div className='relative w-[45%]'>
+          <Image alt='sangria' fill={true} src="/sangria.jpg" className='rounded-md'></Image>
+        </div>
+      </div>
     </div>
+    <footer className=" h-[7vh] pt-4 w-[100%] flex">
+      <div className=" w-[80%] mb-4 ml-[3%]">
+       <div className="flex flex-wrap gap-2 w-[100%] justify-start">
+       <IconContext.Provider value={{ color: "#a7a8aa", className: "global-class-name", size:"2em" }}>
+        <Link href="https://www.instagram.com/vulpine_drinks/">
+          <PiInstagramLogoThin className="cursor-pointer"/>
+        </Link>
+       </IconContext.Provider>
+       <IconContext.Provider value={{ color: "#a7a8aa", className: "global-class-name", size:"2em" }}>
+        <Link href="https://youtu.be/sRh-2tZssnI?si=QaX5vmUn3fyaQe0z">
+        <PiYoutubeLogoThin className="cursor-pointer" />
+        </Link>
+       </IconContext.Provider>
+        </div>
+      </div>
+      <div className="justify-end flex flex-wrap w-[20%]">
+        <IconContext value={{ color: "#a7a8aa", className: "global-class-name", size:"2em"}}>
+          <Link href="https://www.youtube.com/watch?v=utvVUNrn5X8" target="_blank" className="mr-[8%]">
+          <GiFox />
+          </Link>
+        </IconContext>
+       </div>
+    </footer>
   </section>
 
   </>
