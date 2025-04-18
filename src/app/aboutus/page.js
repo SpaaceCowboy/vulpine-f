@@ -93,8 +93,28 @@ function page() {
       </div>
     </div>
     <div className=' w-[100%] h-[70vh] lg:h-[80vh] bg-[#29343D] mt-40'>
-      <div className='flex flex-row w-[100%] h-[55vh] lg:h-[65vh]  mt-[15vh]'>
-        <div className='flex flex-col w-[50%]'>
+      <div className='flex flex-row w-[100%] h-[55vh] lg:h-[65vh]  mt-[15vh] '>
+        <div className='flex flex-col w-[52%]  text-left px-8 justify-between pb-10 pr-8'>
+           <h1 className='text-5xl tracking-wider'>
+            For every ocation
+           </h1>
+           <div className='border-b pb-3 border-[#B68B4B]'>
+            <h2 className='text-2xl'>Personalized cocktailes</h2>
+            <p className='text-sm text-white'> let us tell you what you can make with bottle you have</p>
+           </div>
+           <div className='border-b pb-3 border-[#B68B4B]'>
+            <h2 className='text-2xl'>Classic and Famous cocktails</h2>
+            <p className='text-sm text-white'>chose from all famous and classic cocktails from around the world</p>           
+           </div>
+           <div className='border-b pb-3 border-[#B68B4B]'>
+            <h2 className='text-2xl'>get a taste of our signature cocktails </h2>
+            <p className='text-sm text-white'> have a taste of our originial and signature cocktails</p>   
+           </div>
+           <div className='border-b pb-3 border-[#B68B4B]'>
+            <h2 className='text-2xl'> color theme of your choosing for drinks</h2>
+            <p className='text-sm text-white'>no matter the oceation have your drinks the color of your liking</p>             
+           </div>
+
 
         </div>
         <div className='relative w-[45%]'>
@@ -102,6 +122,8 @@ function page() {
         </div>
       </div>
     </div>
+
+
     <footer className=" h-[7vh] pt-4 w-[100%] flex">
       <div className=" w-[80%] mb-4 ml-[3%]">
        <div className="flex flex-wrap gap-2 w-[100%] justify-start">
