@@ -4,10 +4,11 @@ import {Button} from "@heroui/button"
 import {Form} from "@heroui/form"
 import { DatePicker } from "@heroui/date-picker"
 import React, {useState} from "react"
-import {parseDate} from "@internationalized/date"
-
-
-
+import { NumberInput } from "@heroui/number-input"
+import PhoneInput from "react-phone-input-2"
+import Link from "next/link"
+import Image from "next/image"
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem,} from "@heroui/navbar"
 
 
 
@@ -24,29 +25,77 @@ const onSubmit = (e) => {
     setSubmitted(data)
 }
     return (
-        <section>
-            <div>
-                <Form className="w-full max-w-xs" onSubmit={onSubmit}>
-                    <Input 
-                    isRequired
-                    errorMessage= "please enter a valid email"
-                    label="Email"
-                    labelPlacement="outside"
-                    placeholder="Enter your email"
-                    type="email"
-                    value={email}
-                    onValueChange={setEmail}                   />
-                    <Button type="submit" variant="shadow" className="border-black " radius="lg">
+        
+        <section className="h-[100vh] w-[100%]  flex items-center justify-center bg-[#0E1C1C]  ">
+        <Navbar className="absolute text-[#a7a8aa]">
+            <NavbarBrand>
+                
+            </NavbarBrand>
+            <NavbarContent className="hidden sm:flex gap-20" justify="center">
+                <NavbarItem className="hover:underline">
+                    <Link color="foreground" href="#">
+                        Features
+                    </Link>
+                </NavbarItem>
+                <NavbarItem className="hover:underline" >
+                    <Link aria-current="page" href="#">
+                        Customers
+                    </Link>
+                </NavbarItem>
+                <NavbarItem className="hover:underline">
+                    <Link color="foreground" href="#">
+                        Integrations
+                    </Link>
+                </NavbarItem>
+            </NavbarContent>
+            <NavbarContent justify="end">
+                <NavbarItem className="hidden lg:flex">
+                </NavbarItem>
+                <NavbarItem>
+                </NavbarItem>
+            </NavbarContent>
+        </Navbar>
+                <Form
+                 className="text-[#B68B4B] items-center flex justify-center space-y-4 h-[60%] bg-[#39393F] lg:w-[30%] w-[50%] rounded-lg  "
+                 onSubmit={onSubmit}>
+                    <div className="flex flex-col justify-evenly gap-6 w-[60%]">
+                        <h1 className="text-center text-2xl font-semibold">Place your reservetion now</h1>
+                        <Input 
+                        isRequired
+                        errorMessage= "please enter a valid email"
+                        
+                        labelPlacement="outside"
+                        placeholder="Enter your Name"
+                        type="name"
+                            />
+                        <Input 
+                        isRequired
+                        
+                        labelPlacement="outside"
+                        placeholder="Enter your surname"
+                        type="name"
+                         />
+                        <Input 
+                        placeholder="Enter your Email" 
+                        type="email" />
+                        <p className="tracking-widest">Estimaded event time</p>
+                        <DatePicker
+                         isRequired
+                         labelPlacement="outside"
+                          />
+                        <Button type="submit" variant="shadow" className="border-black mt-10" radius="lg">
                         Submit
-                    </Button>
-                    <DatePicker className="max-w-[284px]" label="Birth date" />
-                    {submitted && (
-                        <div>
-                            you submitted: <code>{JSON.stringify(submitted)}</code>
-                        </div>
+                        </Button>
+                    
+                        {submitted && (
+                            <div>
+                                you submitted: <code>{JSON.stringify(submitted)}</code>
+                            </div>
                     )}
+                    </div>
                 </Form>
-            </div>
+                      
+            
         </section>
     )
 }
