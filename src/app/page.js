@@ -6,64 +6,90 @@ import { PiInstagramLogoThin } from "react-icons/pi"
 import { IconContext } from "react-icons";
 import { PiYoutubeLogoThin } from "react-icons/pi";
 import { GiFox } from "react-icons/gi";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenuItem, NavbarMenu } from "@heroui/navbar"
+import { Button } from "@heroui/button";
+import React, {useState} from "react"
 
 
 
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const menuItems = [
+    "Home",
+    "About Us",
+    "Reserve"
+  ]
 
   const router = useRouter() 
 
   return (
     <div>
-    <header className="flex flex-row  w-[100%] justify-center   absolute">
-      <div className="flex  justify-start  items-center ml-[2%] gap-10 w-screen">
-        <div className=" cursor-pointer rounded-full   text-[#a7a8aa] p-6 hover:underline">
-          <Link href="/">Menu </Link></div> 
-        <div className=" cursor-pointer rounded-full   text-[#a7a8aa] p-6 hover:underline">
-          <Link href="/aboutus">Vulpine</Link></div> 
-        <div className=" cursor-pointer rounded-full   text-[#a7a8aa] p-6 hover:underline">
-          <Link href="/aboutus">Moments</Link></div> 
-        <div className=" cursor-pointer rounded-full   text-[#a7a8aa] p-6 hover:underline">
-          <Link href="/aboutus">Contact</Link></div> 
-        <div className=" cursor-pointer rounded-full   text-[#a7a8aa] p-6 hover:underline">
-          <Link href="/aboutus">Reservation</Link></div>   
-       </div>
-      <div className="relative">
-      <Image alt="logo"width={100} height={100} src="/idk.svg">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="absolute  text-[#a7a8aa]">
+      <NavbarContent>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
+        />
+        <NavbarBrand>
+          <Image alt="logo" width={200} height={100} src="/todidiinomidoni.PNG"></Image>
+        </NavbarBrand>
+      </NavbarContent>
 
-      </Image>
-    </div>
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <NavbarItem>
+          <Link color="foreground" href="/" className="hover:text-[#B68B4B]">
+            Home
+          </Link>
+        </NavbarItem>
+        <NavbarItem isActive>
+          <Link aria-current="page" href="/aboutus" className="hover:text-[#B68B4B]">
+            About Us
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/reserve" className="hover:text-[#B68B4B]">
+            Reserve
+          </Link>
+        </NavbarItem>
+      </NavbarContent>
+      <NavbarContent justify="end">
+        <NavbarItem className="hidden lg:flex">
+          
+        </NavbarItem>
+        <NavbarItem>
 
-  </header>
+        </NavbarItem>
+      </NavbarContent>
+      <NavbarMenu>
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link
+              className="w-full text-[#a7a8aa]"
+              color={
+                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+              }
+              href="#"
+              size="lg"
+            >
+              {item}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
+    </Navbar>
     <main className="flex flex-col items-center justify-center  h-[100vh] overflow-hidden ">
-      <div className="uppercase text-white tracking-[1.rem] p-[2rem] text-[2rem]">
-        <h1>Crafting moments one drink at a time</h1>
-        <div 
-        className="p-[2rem]  m-[1rem] bg-transparent  text-[2rem] uppercase tracking-[0.5rem] flex flex-row gap-8 ">
-        <button
-        onClick={
-          ()=>{
-            router.push("/aboutus")
-          }
-        } className="flex items-center justify-center border-[#a7a8aa] border-[2px] p-[2rem] hover:text-[#a7a8aa] ">
-          Menu</button>
-        <button
-        onClick={
-          ()=>{
-            router.push("/")
-          }
-        } className="flex items-center justify-center border-[#a7a8aa] border-[2px] p-[2rem] ml-[25%] hover:text-[#a7a8aa]">
-          Menu</button>
-        </div>
+      <div className="uppercase text-white tracking-[1.rem] md:p-[2rem] lg:p-[2rem] p-[0.5rem] text-[2rem]">
+        <h1 className="lg:text-[4rem] md:text-[2rem] lg:tracking-[1rem] text-[2rem]">Crafting moments one drink at a time</h1>
+
       </div>
-      
         <video
-        className="absolute z-[-1] h-[100%] w-[100%] object-cover top-0"
-         src="/C0305.MP4"
+        className="absolute z-[-1]  h-[100%] w-[100%] object-cover top-0"
+         src="/salianipishgolighonchekard.MOV"
          autoPlay
          muted 
          loop
+         
          />
          
     </main>
