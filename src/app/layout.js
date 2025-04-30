@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 
 const garamond = EB_Garamond({
   variable: '--font-garamond',
+  subsets: ["latin"],
   weight: [ '400', '500', '600', '700', '800', ],
 })
 
