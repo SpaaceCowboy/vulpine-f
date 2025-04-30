@@ -14,12 +14,7 @@ import {useState} from "react"
 
 
 function page() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const menuItems = [
-        "Home",
-        "About Us",
-        "Reserve"
-    ]
+
 
   return (
     <div className='bg-[#0E1c1c]'>
