@@ -22,7 +22,7 @@ function page() {
     ]
 
   return (
-    <div className='bg-[#0E1c1c]'>
+    <div className='bg-[#0E1c1c] '>
     <Navbar onMenuOpenChange={setIsMenuOpen} className="absolute  text-[#a7a8aa]">
       <NavbarContent>
         <NavbarMenuToggle
