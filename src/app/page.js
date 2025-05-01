@@ -24,6 +24,7 @@ export default function Home() {
   const router = useRouter() 
 
   return (
+
     <div>
     <Navbar onMenuOpenChange={setIsMenuOpen} className="absolute  text-[#a7a8aa]">
       <NavbarContent>
@@ -117,5 +118,6 @@ export default function Home() {
        </div>
     </footer>
     </div>
+
   )
 }
