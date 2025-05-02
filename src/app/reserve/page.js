@@ -81,7 +81,7 @@ const onSubmit = (e) => {
               color={
                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
-              href="#"
+              href="/aboutus"
               size="lg"
             >
               {item}

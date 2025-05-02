@@ -67,7 +67,7 @@ function page() {
               color={
                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
-              href="#"
+              href="/"
               size="lg"
             >
               {item}
@@ -80,7 +80,7 @@ function page() {
     <div className='
     md:w-[100%] lg:w-[100%] h-[40vh] md:h-[60vh] lg:h-[80vh] bg-slate-50/10 z-10 relative  flex self-center
     text-center  items-center flex-col md:justify-evenly justify-between rounded-md  '>
-      <Image alt='about-bg' fill="true" className='rounded-lg  opacity-90 ' src="/about-bg.jpg "></Image>
+      <Image alt='about-bg' fill="true" className='rounded-lg  opacity-90 ' src="https://i.ibb.co/tw7qHndq/about-bg.jpg"></Image>
      <div className=' flex flex-col justify-evenly h-[50%] z-10 '> 
       <p className='lg:text-xl tracking-widest text-shadow'>Welcome to Vulpine</p>
       <h1 className='md:text-5xl text-3xl lg:text-7xl tracking-widest text-shadow '>
@@ -101,7 +101,7 @@ function page() {
     <div className='flex flex-row md:w-[100%] lg:w-[90%] h-[40vh] md:h-[30vh] lg:h-[60vh] gap-2 self-center justify-between 
        mt-5 rounded-md'>
         <div className='  relative lg:w-[26%] md:w-[33%] lg:h-[100%]   '>
-          <Image alt='Rp' fill="true" src="/realoldfashion.JPG" className='rounded-md' >
+          <Image alt='Rp' fill="true" src="https://i.ibb.co/BRnLfXM/realoldfashion.jpg" className='rounded-md' >
 
           </Image>
       </div>
@@ -127,7 +127,7 @@ function page() {
           </button>
       </div>
       <div className='relative lg:w-[29%] md:w-[34%] lg:h-[100%] '>
-        <Image alt='signature' fill={true} src="/realrealnegroni.JPG" className='rounded-md'></Image>
+        <Image alt='signature' fill={true} src="https://i.ibb.co/fdGLP7Zk/realrealnegroni.jpg" className='rounded-md'></Image>
       </div>
       {/* <div className='  relative w-[12%] h-[40%] justify-start'>
           <Image alt='Rp' fill="true" src="/signature.jpg" className='rounded-md' >
@@ -166,7 +166,7 @@ function page() {
 
         </div>
         <div className='hidden lg:show relative w-[30%] lg:flex justify-end h-[90%] ml-40'>
-          <Image alt='sangria' fill={true} src="/nabekossher.JPG" className='rounded-[50%]'></Image>
+          <Image alt='sangria' fill={true} src="https://i.ibb.co/C3ZftWBN/nabekossher.jpg" className='rounded-[50%]'></Image>
         </div>
       </div>
     </div>

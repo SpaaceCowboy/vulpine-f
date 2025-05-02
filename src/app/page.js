@@ -13,6 +13,7 @@ import React, {useState} from "react"
 
 
 
+
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const menuItems = [
@@ -70,7 +71,7 @@ export default function Home() {
               color={
                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
-              href="#"
+              href="/aboutus"
               size="lg"
             >
               {item}
@@ -90,6 +91,7 @@ export default function Home() {
          autoPlay
          muted 
          loop
+         controls
          
          />
          
