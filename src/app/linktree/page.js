@@ -9,17 +9,17 @@ export default function Linktree() {
             <div className="relative w-[390px] h-[100vh] justify-evenly flex flex-col items-center " >
                 <Image alt="linktree-bg" fill={true}  src="/linktree.jpg" />
                 <div className="flex flex-col justify-center align-middle  gap-12 w-[80%] ">
-                <Link href="/" className="z-10 ">
-                <button className="z-10 text-white w-[100%] rounded-[50] py-4 bg-[#39393f] bg-opacity-60 tracking-widest font-medium">
+                <Link href="https://www.instagram.com/vulpine_drinks?igsh=czc2czY1cWx3dDJz" className="z-10 rounded-[50%]">
+                <button className="z-10 text-white w-[100%] rounded-[50] py-4 bg-[#39393f] bg-opacity-60 tracking-[0.3rem] font-medium">
                     INSTGRAM</button> </Link>
-                    <Link href="/" className="z-10 ">
-                <button className="z-10 text-white w-[100%] rounded-[50] py-4 bg-[#39393f] bg-opacity-60 tracking-widest font-medium">
+                    <Link href="/" className="z-10 rounded-[50%]">
+                <button className="z-10 text-white w-[100%] rounded-[50] py-4 bg-[#39393f] bg-opacity-60 tracking-[0.3rem] font-medium">
                     WEBSITE</button> </Link>
-                    <Link href="/" className="z-10 ">
-                <button className="z-10 text-white w-[100%] rounded-[50] py-4 bg-[#39393f] bg-opacity-60 tracking-widest font-medium">
+                    <Link href="/" className="z-10 rounded-[50%]">
+                <button className="z-10 text-white w-[100%] rounded-[50] py-4 bg-[#39393f] bg-opacity-60 tracking-[0.3rem] font-medium">
                     YOUTUBE</button> </Link>
-                    <Link href="/" className="z-10 ">
-                <button className="z-10 text-white w-[100%] rounded-[50] py-4 bg-[#39393f] bg-opacity-60 tracking-widest font-medium">
+                    <Link href="https://api.whatsapp.com/send/?phone=%2B905418242469&text&type=phone_number&app_absent=0" className="z-10 rounded-[50%]">
+                <button className="z-10 text-white w-[100%] rounded-[50] py-4 bg-[#39393f] bg-opacity-60 tracking-[0.3rem] font-medium">
                      WHATSAPP</button> </Link>
                 </div>
 
