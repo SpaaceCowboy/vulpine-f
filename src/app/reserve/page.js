@@ -36,7 +36,8 @@ const onSubmit = (e) => {
 }
     return (
         
-        <section className="h-[100vh] w-[100%]  flex items-center justify-center bg-[#081d1d] ">
+        <section className="h-[100vh] w-[100%] relative  flex items-center justify-center bg-[#081d1d] ">
+          <Image alt="bg" fill={true} src="/reserve-bg1.jpg" className="opacity-[90%]"   />
     <Navbar onMenuOpenChange={setIsMenuOpen} className="absolute  text-[#a7a8aa]">
       <NavbarContent>
         <NavbarMenuToggle
@@ -91,17 +92,17 @@ const onSubmit = (e) => {
       </NavbarMenu>
     </Navbar>
                 <Form
-                 className="text-[#B68B4B] items-center flex justify-center space-y-4 h-[60%] bg-[#39393F] lg:w-[30%] w-[50%] rounded-lg  "
+                 className="text-[#B68B4B] z-10 bg-opacity-60 items-center flex justify-center space-y-4 h-[70%] md:h-[70%] lg:h-[70%] xl:w-[40%] lg:w-[50%] w-[90%] md:w-[70%] bg-[#39393F] rounded-lg  "
                  onSubmit={onSubmit}>
-                    <div className="flex flex-col justify-evenly gap-6 w-[60%]">
+                    <div className="flex flex-col justify-evenly gap-6 w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%]">
                         <h1 className="text-center text-2xl font-semibold">Place your reservetion now</h1>
                         <Input 
                         isRequired
                         errorMessage= "please enter a valid email"
-                        
                         labelPlacement="outside"
                         placeholder="Name & Surename"
                         type="name"
+                        
                             />
                         <Input 
                         isRequired
@@ -113,12 +114,12 @@ const onSubmit = (e) => {
                         <Input 
                         placeholder="Enter your Email" 
                         type="email" />
-                        <p className="tracking-widest">Estimaded event time</p>
+                        <p className="tracking-widest text-center">Estimaded event time</p>
                         <DatePicker
                          isRequired
                          labelPlacement="outside"
                           />
-                        <Button type="submit" variant="shadow" className="border-black mt-10" radius="lg">
+                        <Button type="submit" variant="shadow" className="border-black w-[50%] ml-[25%]"  radius="lg">
                         Submit
                         </Button>
                     
