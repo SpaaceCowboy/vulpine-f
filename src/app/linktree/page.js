@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function Linktree() {
     return (
-        <section className="flex justify-center h-[100%]" >
-            <div className="relative w-[420px] h-[100vh] justify-evenly flex flex-col items-center " >
+        <section className="flex justify-center  h-[100%]" >
+            <div className="relative  w-[420px] overflow-hidden h-[100vh] justify-evenly flex flex-col items-center " >
                 <Image alt="linktree-bg" fill={true}  src="https://i.ibb.co/Z1LSGFbV/linktree.jpg" />
                 <div className="flex flex-col justify-center align-middle  gap-12 w-[80%] ">
                     <h1 className="tracking-[.6rem] text-center z-10 text-white text-4xl">VULPINE</h1>

@@ -78,7 +78,7 @@ function page() {
     </Navbar>
   <section className='top-28 flex flex-col w-[100%] relative bg-[#0E1c1c] text-[#B68B4B]'>
     <div className='
-    md:w-[100%] lg:w-[100%] h-[40vh] md:h-[60vh] lg:h-[80vh] bg-slate-50/10 z-10 relative  flex self-center
+    md:w-[100%]  lg:w-[100%] h-[40vh] md:h-[60vh] lg:h-[80vh] bg-slate-50/10 z-10 relative  flex self-center
     text-center  items-center flex-col md:justify-evenly justify-between rounded-md  '>
       <Image alt='about-bg' fill="true" className='rounded-lg  opacity-90 ' src="https://i.ibb.co/tw7qHndq/about-bg.jpg"></Image>
      <div className=' flex flex-col justify-evenly h-[50%] z-10 '> 
@@ -140,9 +140,9 @@ function page() {
         </Image>
       </div> */}
     </div>
-    <div className=' w-[100%] h-[70vh] lg:h-[80vh] bg-[#29343D] mt-40'>
-      <div className='flex flex-row w-[100%] h-[55vh] lg:h-[65vh]  mt-[15vh] '>
-        <div className='flex flex-col lg:w-[52%] w-[100%]   text-center  px-8 justify-between pb-10 pr-8'>
+    <div className='overflow-auto w-[100%] h-[70vh] lg:h-[80vh] bg-[#29343D] mx-auto mt-40 '>
+      <div className='flex flex-row w-[100%] h-[55vh] lg:h-[65vh]   mt-[15vh] '>
+        <div className='flex flex-col lg:w-[52%] w-[100%]    text-center  px-8 justify-between pb-10 pr-8'>
            <h1 className='text-6xl tracking-widest text-shadow text-center'>
             For every ocation
            </h1>

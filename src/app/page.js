@@ -80,7 +80,7 @@ export default function Home() {
         ))}
       </NavbarMenu>
     </Navbar>
-    <main className="flex flex-col items-center justify-center  h-[100vh] overflow-hidden ">
+    <main className="flex flex-col items-center justify-center  h-[100vh] overflow-auto ">
       <div className="uppercase text-white tracking-[1.rem] md:p-[2rem] lg:p-[0rem] p-[0.5rem] text-[2rem]">
         <h1 className="lg:text-[4rem] md:text-[2rem] text-center lg:tracking-[0.6rem] text-[2rem]">Crafting moments one drink at a time</h1>
 
