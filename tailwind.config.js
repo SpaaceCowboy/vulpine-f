@@ -26,6 +26,7 @@ export default {
   },
   darkMode: "class",
   plugins: [
+    require('tailwind-scrollbar'),
     require('tailwindcss-aspect-ratio'),
     heroui()],
 };

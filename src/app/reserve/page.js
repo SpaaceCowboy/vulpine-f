@@ -36,7 +36,7 @@ const onSubmit = (e) => {
 }
     return (
         
-        <section className="h-[100vh] w-[100%] relative  flex items-center justify-center bg-[#081d1d] ">
+    <section className="h-[100vh] w-[100%] relative  flex items-center justify-center bg-[#081d1d] ">
           <Image alt="bg" fill={true} src="/reserve-bg1.jpg" className="opacity-[90%]"   />
     <Navbar onMenuOpenChange={setIsMenuOpen} className="absolute  text-[#a7a8aa]">
       <NavbarContent>
@@ -49,19 +49,19 @@ const onSubmit = (e) => {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-10" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/" className="hover:text-[#B68B4B]">
+          <Link color="foreground" href="/" className="hover:text-[#B68B4B] md:text-lg lg:text-xl tracking-widest">
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link aria-current="page" href="/aboutus" className="hover:text-[#B68B4B]">
+        <NavbarItem >
+          <Link aria-current="page" href="/aboutus" className="hover:text-[#B68B4B] md:text-lg lg:text-xl tracking-widest">
             About Us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/reserve" className="hover:text-[#B68B4B]">
+          <Link color="foreground" href="/reserve" className="hover:text-[#B68B4B] md:text-lg lg:text-xl tracking-widest">
             Reserve
           </Link>
         </NavbarItem>
@@ -113,7 +113,8 @@ const onSubmit = (e) => {
                          />
                         <Input 
                         placeholder="Enter your Email" 
-                        type="email" />
+                        type="email"
+                        />
                         <p className="tracking-widest text-center">Estimaded event time</p>
                         <DatePicker
                          isRequired

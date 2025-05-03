@@ -38,19 +38,19 @@ export default function Home() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-10" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/" className="hover:text-[#B68B4B]">
+          <Link color="foreground" href="/" className="hover:text-[#B68B4B] md:text-lg lg:text-xl tracking-widest">
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link aria-current="page" href="/aboutus" className="hover:text-[#B68B4B]">
+        <NavbarItem >
+          <Link aria-current="page" href="/aboutus" className="hover:text-[#B68B4B] md:text-lg lg:text-xl tracking-widest">
             About Us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/reserve" className="hover:text-[#B68B4B]">
+          <Link color="foreground" href="/reserve" className="hover:text-[#B68B4B] md:text-lg lg:text-xl tracking-widest">
             Reserve
           </Link>
         </NavbarItem>

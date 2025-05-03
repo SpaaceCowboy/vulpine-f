@@ -22,7 +22,7 @@ function page() {
     ]
 
   return (
-    <div className='bg-[#0E1c1c] '>
+    <div className='bg-[#2f3033] scrollbar-track-gray-400/20 scrollbar-thumb-[#B68B4B] overflow-y-scroll scrollbar-thin h-screen '>
     <Navbar onMenuOpenChange={setIsMenuOpen} className="absolute  text-[#a7a8aa]">
       <NavbarContent>
         <NavbarMenuToggle
@@ -34,19 +34,19 @@ function page() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-10" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/" className="hover:text-[#B68B4B]">
+          <Link color="foreground" href="/" className="hover:text-[#B68B4B] md:text-lg lg:text-xl tracking-widest">
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link aria-current="page" href="/aboutus" className="hover:text-[#B68B4B]">
+        <NavbarItem >
+          <Link aria-current="page" href="/aboutus" className="hover:text-[#B68B4B] md:text-lg lg:text-xl tracking-widest">
             About Us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/reserve" className="hover:text-[#B68B4B]">
+          <Link color="foreground" href="/reserve" className="hover:text-[#B68B4B] md:text-lg lg:text-xl tracking-widest">
             Reserve
           </Link>
         </NavbarItem>
@@ -76,7 +76,7 @@ function page() {
         ))}
       </NavbarMenu>
     </Navbar>
-  <section className='top-28 flex flex-col w-[100%] relative bg-[#0E1c1c] text-[#B68B4B]'>
+  <section className='top-28 flex flex-col w-[100%] relative bg-[#2f3033] text-[#B68B4B]'>
     <div className='
     md:w-[100%]  lg:w-[100%] h-[40vh] md:h-[60vh] lg:h-[80vh] bg-slate-50/10 z-10 relative  flex self-center
     text-center  items-center flex-col md:justify-evenly justify-between rounded-md  '>
@@ -140,9 +140,12 @@ function page() {
         </Image>
       </div> */}
     </div>
-    <div className='overflow-auto w-[100%] h-[70vh] lg:h-[80vh] bg-[#29343D] mx-auto mt-40 '>
+    <div className='overflow-auto w-[100%] h-[70vh] lg:h-[80vh] z-20  mx-auto mt-40 '>
+      
+    <div className='w-full absolute top-[60%] md:top-[65%] lg:top-[70%] bg-[#29343D] left-0 h-[500px]
+            -skew-y-12 '  />
       <div className='flex flex-row w-[100%] h-[55vh] lg:h-[65vh]   mt-[15vh] '>
-        <div className='flex flex-col lg:w-[52%] w-[100%]    text-center  px-8 justify-between pb-10 pr-8'>
+        <div className='z-10 flex flex-col lg:w-[52%] w-[100%]    text-center  px-8 justify-between pb-10 pr-8'>
            <h1 className='text-6xl tracking-widest text-shadow text-center'>
             For every ocation
            </h1>
@@ -162,7 +165,6 @@ function page() {
             <h2 className='text-2xl lg:text-4xl tracking-widest'> color theme of your choosing for drinks</h2>
             <p className='text-sm text-white lg:text-md tracking-wider pt-3' >no matter the oceation have your drinks the color of your liking</p>             
            </div>
-
 
         </div>
         <div className='hidden lg:show relative w-[30%] lg:flex justify-end h-[90%] ml-40'>

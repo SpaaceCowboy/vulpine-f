@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import {motion} from "framer-motion"
 
 
 
@@ -11,7 +12,10 @@ export default function Linktree() {
                 <div className="flex flex-col justify-center align-middle  gap-12 w-[80%] ">
                     <h1 className="tracking-[.6rem] text-center z-10 text-white text-4xl">VULPINE</h1>
                 <Link href="https://www.instagram.com/vulpine_drinks?igsh=czc2czY1cWx3dDJz" className="z-10 rounded-[50%]">
-                <button className="z-10 text-white w-[100%] rounded-[50] py-4 bg-[#39393f] bg-opacity-60 tracking-[0.3rem] font-medium">
+
+                <button
+
+                className="z-10 text-white w-[100%] rounded-[50] py-4 bg-[#39393f] bg-opacity-60 tracking-[0.3rem] font-medium">
                     INSTGRAM</button> </Link>
                     <Link href="/" className="z-10 rounded-[50%]">
                 <button className="z-10 text-white w-[100%] rounded-[50] py-4 bg-[#39393f] bg-opacity-60 tracking-[0.3rem] font-medium">
@@ -34,3 +38,4 @@ export default function Linktree() {
 
 
 }
+
