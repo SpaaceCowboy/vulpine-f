@@ -86,7 +86,7 @@ export default function Home() {
          autoPlay
          muted 
          loop
-         
+        preload="auto"
          
          />
          
