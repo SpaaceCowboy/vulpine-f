@@ -137,9 +137,9 @@ function page() {
         </Image>
       </div> */}
     </div>
-    <div className='overflow-auto w-[100%] h-[90vh] md:h-[70vh] lg:h-[80vh] z-20  mx-auto mt-15 md:mt-40 '>
+    <div className=' w-[100%] h-[90vh] md:h-[70vh] lg:h-[80vh] z-20  mx-auto mt-15 md:mt-40 '>
       
-    <div className='w-full absolute top-[70%] md:top-[65%] lg:top-[71%] bg-[#29343D] left-0 h-[500px]
+    <div className='w-full absolute z-0 top-[70%] md:top-[65%] lg:top-[71%] bg-[#29343D] left-0 h-[500px]
             -skew-y-12 '  />
       <div className='flex flex-row w-[100%] h-[55vh] lg:h-[65vh]   mt-[15vh] '>
         <div className='z-10 flex flex-col lg:w-[52%] w-[100%]    text-center  px-8 justify-between pb-10 pr-8'>
