@@ -171,7 +171,7 @@ function page() {
     </div>
 
 
-    <footer className=" h-[7vh] pt-4 w-[100%] flex">
+    <footer className=" h-[7vh] pt-4 w-[100%] flex z-20">
       <div className=" w-[80%] mb-4 ml-[3%]">
        <div className="flex flex-wrap gap-2 w-[100%] justify-start">
        <IconContext.Provider value={{ color: "#a7a8aa", className: "global-class-name", size:"2em" }}>
