@@ -87,7 +87,7 @@ export default function Home() {
          muted 
          loop
         preload="auto"
-         
+         playsInline
          />
          
     </main>
