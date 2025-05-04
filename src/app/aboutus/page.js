@@ -95,7 +95,7 @@ function page() {
     </div>
     <div className='flex items-center flex-col md:flex-row md:w-[100%] lg:w-[90%] h-[100vh] md:h-[30vh] lg:h-[60vh]  gap-2 self-center justify-between 
        mt-5 rounded-md'>
-        <div className='h-[45%] w-[75%] relative lg:w-[26%] md:w-[33%] md:h-[100%]'>
+        <div className='h-[45%] w-[70%] relative lg:w-[26%] md:w-[33%] md:h-[100%]'>
           <Image alt='Rp' fill="true" src="https://i.ibb.co/BRnLfXM/realoldfashion.jpg" className='rounded-md' >
 
           </Image>
@@ -123,7 +123,7 @@ function page() {
             </button>
           </Link>
       </div>
-      <div className='h-[45%] w-[75%] relative lg:w-[29%] md:w-[34%] md:h-[100%] '>
+      <div className='h-[45%] w-[70%] relative lg:w-[29%] md:w-[34%] md:h-[100%] '>
         <Image alt='signature' fill={true} src="https://i.ibb.co/fdGLP7Zk/realrealnegroni.jpg" className='rounded-md'></Image>
       </div>
       {/* <div className='  relative w-[12%] h-[40%] justify-start'>
