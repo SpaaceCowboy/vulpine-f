@@ -93,9 +93,9 @@ function page() {
        >
          ABOUT US </h1>
     </div>
-    <div className='flex items-center flex-col md:flex-row md:w-[100%] lg:w-[90%] h-[100vh] md:h-[30vh] lg:h-[60vh] gap-2 self-center justify-between 
+    <div className='flex items-center flex-col md:flex-row md:w-[100%] lg:w-[90%] h-[100vh] md:h-[30vh] lg:h-[60vh]  gap-2 self-center justify-between 
        mt-5 rounded-md'>
-        <div className='h-[33%] w-[90%] relative lg:w-[26%] md:w-[33%] md:h-[100%]'>
+        <div className='h-[45%] w-[90%] relative lg:w-[26%] md:w-[33%] md:h-[100%]'>
           <Image alt='Rp' fill="true" src="https://i.ibb.co/BRnLfXM/realoldfashion.jpg" className='rounded-md' >
 
           </Image>
@@ -110,18 +110,20 @@ function page() {
 
         </Image>
       </div> */}
-      <div className='flex flex-col w-[90%] h-[33%] md:h-[100%] lg:w-[32%] md:w-[34%] rounded-md justify-evenly text-center items-center bg-[#29343D]'>
+      <div className='flex flex-col w-[90%] h-[45%] md:h-[100%] lg:w-[32%] md:w-[34%] rounded-md justify-evenly text-center items-center bg-[#29343D]'>
           <h1 className='lg:text-6xl md:text-3xl text-2xl font-normal text-shadow'>
             TRADITIONAL & MODERN
           </h1>
           <p className='text-1xl lg:text-2xl font-light px-10 md:px-2 lg:px-10 '>
               this is just a test to see if you read more to get to know our team using the section made by me in this website
           </p>
-          <button className='bg-[#081d1d] rounded-md w-[50%] py-2 hover:font-bold border-black'>
-              Reserve Now
-          </button>
+          <Link href="/reserve" className='bg-[#081d1d] rounded-md w-[50%] py-2 hover:font-bold border-black'>
+            <button className=''>
+                Reserve Now
+            </button>
+          </Link>
       </div>
-      <div className='h-[33%] w-[90%] relative lg:w-[29%] md:w-[34%] md:h-[100%] '>
+      <div className='h-[45%] w-[90%] relative lg:w-[29%] md:w-[34%] md:h-[100%] '>
         <Image alt='signature' fill={true} src="https://i.ibb.co/fdGLP7Zk/realrealnegroni.jpg" className='rounded-md'></Image>
       </div>
       {/* <div className='  relative w-[12%] h-[40%] justify-start'>
@@ -135,7 +137,7 @@ function page() {
         </Image>
       </div> */}
     </div>
-    <div className='overflow-auto w-[100%] h-[90vh] md:h-[70vh] lg:h-[80vh] z-20  mx-auto mt-20 md:mt-40 '>
+    <div className='overflow-auto w-[100%] h-[90vh] md:h-[70vh] lg:h-[80vh] z-20  mx-auto mt-15 md:mt-40 '>
       
     <div className='w-full absolute top-[70%] md:top-[65%] lg:top-[71%] bg-[#29343D] left-0 h-[500px]
             -skew-y-12 '  />
