@@ -165,7 +165,7 @@ function page() {
 
         </div>
         <div className='hidden lg:show relative w-[30%] lg:flex justify-end h-[90%] ml-40'>
-          <Image alt='sangria' fill={true} src="https://i.ibb.co/C3ZftWBN/nabekossher.jpg" className='rounded-[50%]'></Image>
+          <Image alt='sangriaa' fill={true} src="https://i.ibb.co/C3ZftWBN/nabekossher.jpg" className='rounded-[50%]'></Image>
         </div>
       </div>
     </div>
