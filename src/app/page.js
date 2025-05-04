@@ -64,20 +64,15 @@ export default function Home() {
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="w-full text-[#a7a8aa]"
-              color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
-              href="/aboutus"
-              size="lg"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
+           <Link color="foreground" href="/" className="hover:text-[#B68B4B] text-[#a7a8aa] md:text-lg lg:text-xl tracking-widest">
+            Home
+          </Link>           
+          <Link aria-current="page" href="/aboutus" className="hover:text-[#B68B4B] text-[#a7a8aa] md:text-lg lg:text-xl tracking-widest">
+            About Us
+          </Link>   
+          <Link color="foreground" href="/reserve" className="hover:text-[#B68B4B] text-[#a7a8aa] md:text-lg lg:text-xl tracking-widest">
+            Reserve
+          </Link>                 
       </NavbarMenu>
     </Navbar>
     <main className="flex flex-col  items-center justify-center  h-[100vh] overflow-auto ">
@@ -91,7 +86,7 @@ export default function Home() {
          autoPlay
          muted 
          loop
-         controls
+         
          
          />
          
@@ -105,7 +100,7 @@ export default function Home() {
         </Link>
        </IconContext.Provider>
        <IconContext.Provider value={{ color: "#a7a8aa", className: "global-class-name", size:"2em" }}>
-        <Link href="https://youtu.be/sRh-2tZssnI?si=QaX5vmUn3fyaQe0z">
+        <Link href="">
         <PiYoutubeLogoThin className="cursor-pointer" />
         </Link>
        </IconContext.Provider>

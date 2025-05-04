@@ -38,7 +38,7 @@ const onSubmit = (e) => {
         
     <section className="h-[100vh] w-[100%] relative  flex items-center justify-center bg-[#081d1d] ">
           <Image alt="bg" fill={true} src="/reserve-bg1.jpg" className="opacity-[90%]"   />
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="absolute  text-[#a7a8aa]">
+          <Navbar onMenuOpenChange={setIsMenuOpen} className="absolute  text-[#a7a8aa]">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -75,20 +75,15 @@ const onSubmit = (e) => {
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="w-full text-[#a7a8aa]"
-              color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
-              href="/aboutus"
-              size="lg"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
+           <Link color="foreground" href="/" className="hover:text-[#B68B4B] text-[#a7a8aa] md:text-lg lg:text-xl tracking-widest">
+            Home
+          </Link>           
+          <Link aria-current="page" href="/aboutus" className="hover:text-[#B68B4B] text-[#a7a8aa] md:text-lg lg:text-xl tracking-widest">
+            About Us
+          </Link>   
+          <Link color="foreground" href="/reserve" className="hover:text-[#B68B4B] text-[#a7a8aa] md:text-lg lg:text-xl tracking-widest">
+            Reserve
+          </Link>                 
       </NavbarMenu>
     </Navbar>
                 <Form
@@ -140,7 +135,7 @@ const onSubmit = (e) => {
         </Link>
        </IconContext.Provider>
        <IconContext.Provider value={{ color: "#a7a8aa", className: "global-class-name", size:"2em" }}>
-        <Link href="https://youtu.be/sRh-2tZssnI?si=QaX5vmUn3fyaQe0z">
+        <Link href="">
         <PiYoutubeLogoThin className="cursor-pointer" />
         </Link>
        </IconContext.Provider>

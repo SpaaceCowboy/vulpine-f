@@ -60,33 +60,28 @@ function page() {
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="w-full text-[#a7a8aa]"
-              color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
-              href="/"
-              size="lg"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
+           <Link color="foreground" href="/" className="hover:text-[#B68B4B] text-[#a7a8aa] md:text-lg lg:text-xl tracking-widest">
+            Home
+          </Link>           
+          <Link aria-current="page" href="/aboutus" className="hover:text-[#B68B4B] text-[#a7a8aa] md:text-lg lg:text-xl tracking-widest">
+            About Us
+          </Link>   
+          <Link color="foreground" href="/reserve" className="hover:text-[#B68B4B] text-[#a7a8aa] md:text-lg lg:text-xl tracking-widest">
+            Reserve
+          </Link>                 
       </NavbarMenu>
     </Navbar>
   <section className='top-28 flex flex-col w-[100%] relative bg-[#2f3033] text-[#B68B4B]'>
     <div className='
     md:w-[100%]  lg:w-[100%] h-[40vh] md:h-[60vh] lg:h-[80vh] bg-slate-50/10 z-10 relative  flex self-center
-    text-center  items-center flex-col md:justify-evenly justify-between rounded-md  '>
+    text-center  items-center flex-col md:justify-evenly justify-center rounded-md  '>
       <Image alt='about-bg' fill="true" className='rounded-lg  opacity-90 ' src="https://i.ibb.co/tw7qHndq/about-bg.jpg"></Image>
      <div className=' flex flex-col justify-evenly h-[50%] z-10 '> 
       <p className='lg:text-xl tracking-widest text-shadow'>Welcome to Vulpine</p>
       <h1 className='md:text-5xl text-3xl lg:text-7xl tracking-widest text-shadow '>
         BEST FAMOUS COCKTAILS
       </h1>
-      <p className='md:px-[10vh] px-[3vh] text-md font-medium lg:text-2xl lg:px-[40vh] text-shadow'>
+      <p className='md:px-[10vh] px-[3vh] text-sm font-medium lg:text-2xl lg:px-[40vh] text-shadow'>
         these is supposed to be the best bartending service in the entire turkey with not competores.
         you can read more about them in the page below
       </p>
@@ -98,9 +93,9 @@ function page() {
        >
          ABOUT US </h1>
     </div>
-    <div className='flex flex-row md:w-[100%] lg:w-[90%] h-[40vh] md:h-[30vh] lg:h-[60vh] gap-2 self-center justify-between 
+    <div className='flex items-center flex-col md:flex-row md:w-[100%] lg:w-[90%] h-[100vh] md:h-[30vh] lg:h-[60vh] gap-2 self-center justify-between 
        mt-5 rounded-md'>
-        <div className='  relative lg:w-[26%] md:w-[33%] lg:h-[100%]   '>
+        <div className='h-[33%] w-[90%] relative lg:w-[26%] md:w-[33%] md:h-[100%]'>
           <Image alt='Rp' fill="true" src="https://i.ibb.co/BRnLfXM/realoldfashion.jpg" className='rounded-md' >
 
           </Image>
@@ -115,18 +110,18 @@ function page() {
 
         </Image>
       </div> */}
-      <div className='flex flex-col lg:w-[32%] md:w-[34%] rounded-md justify-evenly text-center items-center bg-[#29343D]'>
-          <h1 className='lg:text-6xl md:text-3xl font-normal text-shadow'>
+      <div className='flex flex-col w-[90%] h-[33%] md:h-[100%] lg:w-[32%] md:w-[34%] rounded-md justify-evenly text-center items-center bg-[#29343D]'>
+          <h1 className='lg:text-6xl md:text-3xl text-2xl font-normal text-shadow'>
             TRADITIONAL & MODERN
           </h1>
-          <p className='text-1xl lg:text-2xl  font-light px-2 lg:px-10 '>
+          <p className='text-1xl lg:text-2xl font-light px-10 md:px-2 lg:px-10 '>
               this is just a test to see if you read more to get to know our team using the section made by me in this website
           </p>
           <button className='bg-[#081d1d] rounded-md w-[50%] py-2 hover:font-bold border-black'>
               Reserve Now
           </button>
       </div>
-      <div className='relative lg:w-[29%] md:w-[34%] lg:h-[100%] '>
+      <div className='h-[33%] w-[90%] relative lg:w-[29%] md:w-[34%] md:h-[100%] '>
         <Image alt='signature' fill={true} src="https://i.ibb.co/fdGLP7Zk/realrealnegroni.jpg" className='rounded-md'></Image>
       </div>
       {/* <div className='  relative w-[12%] h-[40%] justify-start'>
@@ -140,9 +135,9 @@ function page() {
         </Image>
       </div> */}
     </div>
-    <div className='overflow-auto w-[100%] h-[70vh] lg:h-[80vh] z-20  mx-auto mt-40 '>
+    <div className='overflow-auto w-[100%] h-[90vh] md:h-[70vh] lg:h-[80vh] z-20  mx-auto mt-20 md:mt-40 '>
       
-    <div className='w-full absolute top-[60%] md:top-[65%] lg:top-[71%] bg-[#29343D] left-0 h-[500px]
+    <div className='w-full absolute top-[70%] md:top-[65%] lg:top-[71%] bg-[#29343D] left-0 h-[500px]
             -skew-y-12 '  />
       <div className='flex flex-row w-[100%] h-[55vh] lg:h-[65vh]   mt-[15vh] '>
         <div className='z-10 flex flex-col lg:w-[52%] w-[100%]    text-center  px-8 justify-between pb-10 pr-8'>
@@ -183,7 +178,7 @@ function page() {
         </Link>
        </IconContext.Provider>
        <IconContext.Provider value={{ color: "#a7a8aa", className: "global-class-name", size:"2em" }}>
-        <Link href="https://youtu.be/sRh-2tZssnI?si=QaX5vmUn3fyaQe0z">
+        <Link href="">
         <PiYoutubeLogoThin className="cursor-pointer" />
         </Link>
        </IconContext.Provider>
